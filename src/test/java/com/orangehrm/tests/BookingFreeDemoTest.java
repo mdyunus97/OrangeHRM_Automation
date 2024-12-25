@@ -12,7 +12,7 @@ import com.orangehrm.utilities.UserActions;
 
 @Listeners(MainListeners.class)
 public class BookingFreeDemoTest {
-	@Test
+	@Test(description = "Verify booking a free demo")
 	public static void verifyBookingFreeDemo() throws InterruptedException {
 
 		LoginPage lp = new LoginPage(MainListeners.getDriver());
