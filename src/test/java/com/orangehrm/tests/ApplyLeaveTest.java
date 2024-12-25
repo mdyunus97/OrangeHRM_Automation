@@ -12,7 +12,7 @@ import com.orangehrm.utilities.UserActions;
 @Listeners(MainListeners.class)
 public class ApplyLeaveTest {
 
-	@Test(description = "verify applying leave")
+	@Test(description = "verify applying leaves")
 	public static void applyLeaveApplication() throws InterruptedException {
 		HelperClass.login();
 		LeaveApplicationPage leaveAppPage = new LeaveApplicationPage(MainListeners.getDriver());
