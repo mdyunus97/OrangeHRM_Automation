@@ -19,7 +19,7 @@ public class HomePage {
 	@FindBy(xpath = "//span[@class='oxd-userdropdown-tab']")
 	public WebElement profileIcon;
 
-	@FindBy(xpath = "//span[@class='oxd-userdropdown-tab']/following-sibling::ul//li[4]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/ul/li[4]/a")
 	public WebElement logoutButton;
 
 	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a")
@@ -32,5 +32,9 @@ public class HomePage {
 	// Timesheet Submision
 	@FindBy(xpath = "//button[@title=\"Timesheets\"]")
 	public WebElement timeSheetbtn;
+
+	// Recruitment
+	@FindBy(xpath = "//span[text()='Recruitment']")
+	public WebElement recruitmentOption;
 
 }

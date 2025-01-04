@@ -67,10 +67,15 @@ public class HelperClass {
 //		Files.copy(scrFile.toPath(), Dest.toPath());
 //		return errssflpath;
 
-	public static void screenshotForReport(String message) throws IOException {
+	public static void screenshotForReport(String message) {
 		ExtentTest test = MainListeners.getTest();
-		test.log(Status.PASS, "STEP Passed: " + message,
-				MediaEntityBuilder.createScreenCaptureFromBase64String(HelperClass.capture(MainListeners.getDriver())).build());
+		try {
+			test.log(Status.PASS, "STEP Passed: " + message, MediaEntityBuilder
+					.createScreenCaptureFromBase64String(HelperClass.capture(MainListeners.getDriver())).build());
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 	}
 
