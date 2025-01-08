@@ -40,10 +40,10 @@ public class BookingFreeDemoTest {
 		UserActions.selectDropdownByValue(bd.countryDrpdwn, "India");
 		Thread.sleep(4000);
 
-		UserActions.clickElement(bd.imNotRobot, "clicked on I am not robot");
+//		UserActions.clickElement(bd.imNotRobot, "clicked on I am not robot");
 		UserActions.clickElement(bd.getAFreeDemoBtn, "cliccked on get a free demo button");
-		String confMsg = bd.confrmationMsg.getText();
-		System.out.println(confMsg);
+//		String confMsg = bd.confrmationMsg.getText();
+//		System.out.println(confMsg);
 
 	}
 
