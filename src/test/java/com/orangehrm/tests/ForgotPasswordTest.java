@@ -29,6 +29,7 @@ public class ForgotPasswordTest {
 		UserActions.clickElement(reset.resetPasswdBtn, "clicked on reset password button");
 		String resetMsg = reset.resetPswdMsg.getText();
 		Assert.assertEquals(resetMsg, "Reset Password link sent successfully");
+		MainListeners.getDriver().get("https://opensource-demo.orangehrmlive.com/");
 
 	}
 
