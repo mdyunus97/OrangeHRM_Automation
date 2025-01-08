@@ -12,6 +12,7 @@ import java.util.Properties;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestContext;
@@ -76,7 +77,11 @@ public class MainListeners implements ITestListener {
 		String browser = prop.getProperty("browser");
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+	
+			ChromeOptions options=new ChromeOptions();
+			options.addArguments("--headless");
+			
+			driver = new ChromeDriver(options);
 
 		}
 

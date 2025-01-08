@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Test: verifyAddCandidate]]>
+      <![CDATA[Test: successfullLogin]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-01-04T19:06:30 IST" name="Default suite" finished-at="2025-01-04T19:07:09 IST" duration-ms="39247">
+  <suite started-at="2025-01-08T14:30:10 IST" name="Default suite" finished-at="2025-01-08T14:30:29 IST" duration-ms="19648">
     <groups>
     </groups>
-    <test started-at="2025-01-04T19:06:30 IST" name="Default test" finished-at="2025-01-04T19:07:09 IST" duration-ms="39247">
-      <class name="com.orangehrm.tests.VerifyAddingCandidate">
-        <test-method signature="verifyAddCandidate()[pri:0, instance:com.orangehrm.tests.VerifyAddingCandidate@9d5509a]" started-at="2025-01-04T19:06:38 IST" name="verifyAddCandidate" finished-at="2025-01-04T19:07:09 IST" duration-ms="31152" status="PASS">
+    <test started-at="2025-01-08T14:30:10 IST" name="Default test" finished-at="2025-01-08T14:30:29 IST" duration-ms="19648">
+      <class name="com.orangehrm.tests.LoginTest">
+        <test-method signature="successfullLogin()[pri:2, instance:com.orangehrm.tests.LoginTest@77c2494c]" started-at="2025-01-08T14:30:16 IST" name="successfullLogin" description="To verify successfull Loggin into the OrangeHRM application" finished-at="2025-01-08T14:30:29 IST" duration-ms="12760" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Test: verifyAddCandidate]]>
+              <![CDATA[Test: successfullLogin]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyAddCandidate -->
-      </class> <!-- com.orangehrm.tests.VerifyAddingCandidate -->
+        </test-method> <!-- successfullLogin -->
+      </class> <!-- com.orangehrm.tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
