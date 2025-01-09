@@ -13,8 +13,7 @@ import com.orangehrm.utilities.UserActions;
 @Listeners(MainListeners.class)
 public class VerifyAddingCandidate {
 
-	@Test
-	@Parameters("browser")
+	@Test(description = "Verification of adding candidate test")
 	public static void verifyAddCandidate() throws InterruptedException {
 
 		HelperClass.login();
@@ -41,7 +40,7 @@ public class VerifyAddingCandidate {
 		UserActions.clickElement(rp.shortListBtn, "clicked on shortlist button");
 		UserActions.clickElement(rp.saveBtn, "clicked on save button");
 
-//		HelperClass.logOut();
+		HelperClass.logOut();
 	}
 
 }
