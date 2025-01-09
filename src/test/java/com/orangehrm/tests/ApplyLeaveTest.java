@@ -35,7 +35,7 @@ public class ApplyLeaveTest {
 		UserActions.clickElement(leaveAppPage.specifyTime, "Clicked on specify time");
 		UserActions.clickElement(leaveAppPage.applyBtn, "Clicked on apply leave button");
 //testbranch
-		HelperClass.logOut();
+		HelperClass.logOut(); 
 
 	}
 
