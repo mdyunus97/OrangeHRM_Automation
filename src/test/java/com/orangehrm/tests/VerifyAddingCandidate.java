@@ -13,8 +13,7 @@ import com.orangehrm.utilities.UserActions;
 @Listeners(MainListeners.class)
 public class VerifyAddingCandidate {
 
-	@Test
-	@Parameters("browser")
+	@Test(description = "Verification of adding candidate test")
 	public static void verifyAddCandidate() throws InterruptedException {
 
 		HelperClass.login();
