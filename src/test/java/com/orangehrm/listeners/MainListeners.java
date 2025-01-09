@@ -60,7 +60,7 @@ public class MainListeners implements ITestListener {
 		spark = new ExtentSparkReporter("./reports/" + getCurrentDate() + "/OrangeHRM_" + getDateAndTime() + ".html");
 
 		spark.config().thumbnailForBase64(true);
-		spark.config().setTheme(Theme.DARK);
+		spark.config().setTheme(Theme.STANDARD);
 		spark.config().setDocumentTitle("OrangeHRM Execution report");
 		spark.config().setReportName("OrangeHRM Regression suites" );
 		spark.config().setTimeStampFormat("dd:MMM:yyyy");
