@@ -40,7 +40,7 @@ public class VerifyAddingCandidate {
 		UserActions.clickElement(rp.shortListBtn, "clicked on shortlist button");
 		UserActions.clickElement(rp.saveBtn, "clicked on save button");
 
-//		HelperClass.logOut();
+		HelperClass.logOut();
 	}
 
 }
