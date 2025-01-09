@@ -38,12 +38,13 @@ public class BookingFreeDemoTest {
 		UserActions.setValue(bd.companyName, "Rover Technologies", "Entered company name");
 		UserActions.clickElement(bd.countryDrpdwn, "Clicked on country dropdown");
 		UserActions.selectDropdownByValue(bd.countryDrpdwn, "India");
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 
 //		UserActions.clickElement(bd.imNotRobot, "clicked on I am not robot");
 		UserActions.clickElement(bd.getAFreeDemoBtn, "cliccked on get a free demo button");
 //		String confMsg = bd.confrmationMsg.getText();
 //		System.out.println(confMsg);
+		MainListeners.getDriver().get("https://opensource-demo.orangehrmlive.com/");
 
 	}
 
