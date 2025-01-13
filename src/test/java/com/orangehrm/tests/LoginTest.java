@@ -31,6 +31,7 @@ public class LoginTest {
 
 		HelperClass.logOut();// logging off
 	}
+	
 
 	@Test(priority = 1, description = "To verify Unsuccessfull Loggin into the OrangeHRM application")
 	public static void verifyLoginError() throws InterruptedException, IOException {
