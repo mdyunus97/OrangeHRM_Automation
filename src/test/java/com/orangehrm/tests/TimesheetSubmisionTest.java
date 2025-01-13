@@ -27,17 +27,7 @@ public class TimesheetSubmisionTest {
 		UserActions.clickElement(timeShtPage.viewBtn, "Clicked on view button");
 		Thread.sleep(3000);
 
-		try {
-			if (timeShtPage.restBtn != null && timeShtPage.restBtn.isDisplayed()) {
-				UserActions.clickElement(timeShtPage.restBtn, "Clicked on reset button");
-			} else {
-				if (timeShtPage.approveTmshtBtn != null && timeShtPage.approveTmshtBtn.isDisplayed()) {
-					UserActions.clickElement(timeShtPage.approveTmshtBtn, "Clicked on approve timesheet button");
-				}
-			}
-		} catch (Exception e) {
-			System.out.println("An optional button is either missing or not clickable: " + e.getMessage());
-		}
+		UserActions.clickElement(timeShtPage.approveTmshtBtn, "Clicked on approve timesheet button");
 
 		String timeShtStatus = timeShtPage.tmshtStatus.getText();
 		Assert.assertEquals(timeShtStatus, "Status: Approved");

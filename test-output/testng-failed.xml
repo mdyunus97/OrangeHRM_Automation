@@ -3,12 +3,32 @@
 <suite name="Failed suite [RegresionSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Tests(failed)">
     <classes>
-      <class name="com.orangehrm.tests.LoginTest">
+      <class name="com.orangehrm.tests.ApplyLeaveTest">
         <methods>
-          <include name="successfullLogin"/>
-          <include name="verifyLoginError"/>
+          <include name="applyLeaveApplication"/>
         </methods>
-      </class> <!-- com.orangehrm.tests.LoginTest -->
+      </class> <!-- com.orangehrm.tests.ApplyLeaveTest -->
+      <class name="com.orangehrm.tests.VerifyOrangeHRMWebsitePage">
+        <methods>
+          <include name="verifyWebsitePage"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.VerifyOrangeHRMWebsitePage -->
+      <class name="com.orangehrm.tests.TimesheetSubmisionTest">
+        <methods>
+          <include name="verifyTimeSheetSubmission"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.TimesheetSubmisionTest -->
+      <class name="com.orangehrm.tests.VerifyAddingCandidate">
+        <methods>
+          <include name="verifyAddCandidate"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.VerifyAddingCandidate -->
+      <class name="com.orangehrm.tests.VerifyGenaralInformationTest">
+        <methods>
+          <include name="verifyGenaralinfoPage"/>
+          <include name="verify_if_a_user_can_able_to_to_edit_and_save_the_general_information"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.VerifyGenaralInformationTest -->
       <class name="com.orangehrm.tests.ForgotPasswordTest">
         <methods>
           <include name="verifyResetPasswordSuccessMsg"/>
@@ -19,26 +39,11 @@
           <include name="verifyBookingFreeDemo"/>
         </methods>
       </class> <!-- com.orangehrm.tests.BookingFreeDemoTest -->
-      <class name="com.orangehrm.tests.ApplyLeaveTest">
-        <methods>
-          <include name="applyLeaveApplication"/>
-        </methods>
-      </class> <!-- com.orangehrm.tests.ApplyLeaveTest -->
       <class name="com.orangehrm.tests.VerifyQualificationTest">
         <methods>
           <include name="verifyAddandDeleteEducation"/>
         </methods>
       </class> <!-- com.orangehrm.tests.VerifyQualificationTest -->
-      <class name="com.orangehrm.tests.TimesheetSubmisionTest">
-        <methods>
-          <include name="verifyTimeSheetSubmission"/>
-        </methods>
-      </class> <!-- com.orangehrm.tests.TimesheetSubmisionTest -->
-      <class name="com.orangehrm.tests.VerifyOrangeHRMWebsitePage">
-        <methods>
-          <include name="verifyWebsitePage"/>
-        </methods>
-      </class> <!-- com.orangehrm.tests.VerifyOrangeHRMWebsitePage -->
     </classes>
   </test> <!-- Tests(failed) -->
 </suite> <!-- Failed suite [RegresionSuite] -->
