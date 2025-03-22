@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -62,7 +63,7 @@ public class MainListeners implements ITestListener {
 		spark.config().thumbnailForBase64(true);
 		spark.config().setTheme(Theme.DARK);
 		spark.config().setDocumentTitle("OrangeHRM Execution report");
-		spark.config().setReportName("OrangeHRM Regression suites" );
+		spark.config().setReportName("OrangeHRM Regression suites");
 		spark.config().setTimeStampFormat("dd:MMM:yyyy");
 		extent.attachReporter(spark);
 		prop = new Properties();
@@ -77,16 +78,23 @@ public class MainListeners implements ITestListener {
 		String browser = prop.getProperty("browser");
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-	
-			ChromeOptions options=new ChromeOptions();
-			options.addArguments("--headless");
-			
+			ChromeOptions options = new ChromeOptions();
+			if (prop.getProperty("headless").equalsIgnoreCase("true")) {
+
+				options.addArguments("--headless");
+			}
+
 			driver = new ChromeDriver(options);
 
 		}
 
 		if (browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
+			EdgeOptions options = new EdgeOptions();
+			if (prop.getProperty("headless").equalsIgnoreCase("true")) {
+
+				options.addArguments("--headless");
+			}
 			driver = new EdgeDriver();
 
 		}
