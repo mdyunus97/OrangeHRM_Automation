@@ -14,7 +14,10 @@ import com.orangehrm.utilities.UserActions;
 public class VerifyOrangeHRMWebsitePage {
 
 	@Test
+	
+	
 	public static void verifyWebsitePage() throws InterruptedException {
+		//verifyWebsite
 		LoginPage lp = new LoginPage(MainListeners.getDriver());
 		UserActions.clickElement(lp.websiteLink, "clicked on ornage hrom navigation link");
 		Thread.sleep(3000);
