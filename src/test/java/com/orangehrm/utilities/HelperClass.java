@@ -28,7 +28,6 @@ public class HelperClass {
 	static WebDriver driver;
 
 	public static void login() throws InterruptedException {
-		Properties prop = MainListeners.getProp();
 		String userName = readSpecificData("UserName");
 		String password = readSpecificData("Password");
 

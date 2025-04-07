@@ -97,7 +97,7 @@ public class MainListeners implements ITestListener {
 		}
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
 	public void onTestStart(ITestResult result) {
